@@ -1,9 +1,8 @@
-# This entrypoint file to be used in development. Start by reading README.md
-import prob_calculator
+import p_calc
 from unittest import main
 
-hat = prob_calculator.Hat(blue=4, red=2, green=6)
-probability = prob_calculator.experiment(
+hat = p_calc.Hat(blue=4, red=2, green=6)
+probability = p_calc.experiment(
     hat=hat,
     expected_balls={"blue": 2,
                     "red": 1},
